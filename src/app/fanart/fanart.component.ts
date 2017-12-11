@@ -10,11 +10,19 @@ import { masterPostList } from './../posts.model';
 
 export class FanartComponent implements OnInit {
   public masterCategory: string = "fanart";
-
+  public showForm = false;
   addPost(childPost) {
     masterPostList.push(childPost);
   }
 
   ngOnInit() {
+  }
+
+  addFormShow() {
+    if(this.showForm) {
+      this.showForm = false;
+    } else {
+      this.showForm = true;
+    }
   }
 }

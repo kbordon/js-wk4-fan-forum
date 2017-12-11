@@ -8,12 +8,18 @@ import { masterPostList } from './../posts.model';
 })
 export class WritingComponent implements OnInit {
   public masterCategory: string = "writing";
-
+  public showForm = false;
   addPost(childPost) {
     masterPostList.push(childPost);
   }
 
   ngOnInit() {
   }
-
+  addFormShow() {
+    if(this.showForm) {
+      this.showForm = false;
+    } else {
+      this.showForm = true;
+    }
+  }
 }

@@ -10,11 +10,18 @@ import { masterPostList } from './../posts.model';
 
 export class SpoilerComponent implements OnInit {
   public masterCategory:string = "spoiler";
-
+  public showForm = false;
   addPost(childPost) {
     masterPostList.push(childPost);
   }
 
   ngOnInit() {
+  }
+  addFormShow() {
+    if(this.showForm) {
+      this.showForm = false;
+    } else {
+      this.showForm = true;
+    }
   }
 }

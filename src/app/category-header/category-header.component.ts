@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-category-header',
@@ -6,8 +6,12 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./category-header.component.css']
 })
 export class CategoryHeaderComponent implements OnInit {
-@Input() childCategory:string;
-  constructor() { }
+  @Input() childCategory:string;
+  @Output() addSender = new EventEmitter();
+
+  addButtonClicked() {
+    this.addSender.emit();
+  }
 
   ngOnInit() {
   }
