@@ -1,0 +1,17 @@
+<div class="content">
+  <div class="posts" *ngFor="let post of childPosts">
+    <h1>{{post.title}}</h1>
+    <p><small>{{post.timestamp}}</small></p>
+    <p><small>{{post.author}}</small></p>
+    <img src="{{post.image}}" alt="">
+    <p>{{post.content}}</p>
+    <button *ngIf="!post.editing" type="button" name="button" (click)="editPost(post)">edit</button>
+    <div *ngIf="post.editing">
+      <input type="text" [(ngModel)]="post.title">
+      <input type="text" [(ngModel)]="post.image">
+      <input type="text" [(ngModel)]="post.content">
+      <button type="button" name="button" (click)="doneEdit(post)">Done</button>
+    </div>
+    <button type="button" name="button" (click)="deletePost(post)">delete</button>
+  </div>
+</div>

@@ -1,5 +1,25 @@
 # Forum
 
+### By Adam Titus & Kimberly Bordon
+
+## Specs
+| Behavior | Input Example | Output Example |
+|-|-|-|
+| As a user, I want to see several discussion categories on the the main page. | User goes to page. | Page shows discussion categories at top or side in the navigation bar. |
+| As a user, I want to a click a category to visit its collection of posts. | User clicks category link. | App goes to page of that link, with posts. |
+| As a user, I want to click a post to view its contents. | User clicks post link. | App goes to that post's page. (routes to it or whatever)|
+| As a user, I want to click on a post to expand/collapse it, so I can view whatever funny picture, link, or nsfw item other users have posted.| User clicks specific icon or link. | Page expands that post's initial/teaser content, or whatever might be collapsed. |
+| As a user, I want to add new posts to a discussion category. | User clicks add post on the specific category page. | App goes to form page to add post. |
+| As a user, I want to update my post as necessary. | User clicks edit on specific post. | App goes to form page to edit post. |
+| As a user, I want the option to delete my post. | User clicks remove on a specific post. | App goes to dialogue box or page that asks if they really want to delete post, and user can click yes or cancel. |
+
+BONUS POINTS
+| Behavior | Input Example | Output Example |
+|-|-|-|
+| As a user, I want to upvote posts I particularly enjoy. | User clicks upvoting icon. | Page shows orange arrow to the side of post. |
+| As a user, I want to downvote posts I don't like, or find appropriate. | User clicks downvoting icon. | Page shows blue arrow to side of post. |
+| As a user, I want my new posts to include a timestamp, and see when other posts were posted. | User adds post or looks at posts. | Page shows timestamps. |
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
 ## Development server

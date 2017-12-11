@@ -1,0 +1,16 @@
+<div class="form">
+  <br>
+  <input type="text" placeholder="Title" #postTitle>
+  <br>
+  <br>
+  <input type="text" placeholder="Author" #postAuthor>
+  <br>
+  <br>
+  <input type="text" placeholder="Image URL or leave blank" #postImage>
+  <br>
+  <br>
+  <textarea placeholder="Enter post" #postText></textarea>
+  <br>
+  <br>
+  <button type="button" name="button" (click)="submitForm(postTitle.value, postAuthor.value, postImage.value, postText.value)">add</button>
+</div>
