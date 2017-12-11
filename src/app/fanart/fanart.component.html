@@ -1,3 +1,3 @@
 <app-category-header [childCategory]="masterCategory"></app-category-header>
-<app-form (formSender)="addPost($event)"></app-form>
-<app-content (deleteSender)="deletePost($event)"></app-content>
+<app-form [categoryType]="masterCategory" (formSender)="addPost($event)"></app-form>
+<app-content [childCategoryType]="masterCategory"></app-content>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { masterPostList } from './../posts.model';
 
 @Component({
   selector: 'app-writing',
@@ -6,8 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./writing.component.css']
 })
 export class WritingComponent implements OnInit {
+  public masterCategory: string = "writing";
 
-  constructor() { }
+  addPost(childPost) {
+    masterPostList.push(childPost);
+  }
 
   ngOnInit() {
   }

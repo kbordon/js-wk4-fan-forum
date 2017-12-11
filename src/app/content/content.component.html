@@ -1,10 +1,12 @@
 <div class="content">
   <div class="posts" *ngFor="let post of childPosts | postTypePipe: childCategoryType">
-    <h1>{{post.title}}</h1>
+    <h1 (click)="showHideToggle(post)">{{post.title}}</h1>
     <p><small>{{post.timestamp}}</small></p>
     <p><small>{{post.author}}</small></p>
-    <img src="{{post.image}}" alt="">
-    <p>{{post.content}}</p>
+    <div *ngIf="post.active">
+      <img src="{{post.image}}" alt="">
+      <p>{{post.content}}</p>
+    </div>
     <button *ngIf="!post.editing" type="button" name="button" (click)="editPost(post)">edit</button>
     <div *ngIf="post.editing">
       <input type="text" [(ngModel)]="post.title">

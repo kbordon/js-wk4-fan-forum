@@ -18,11 +18,21 @@ export class ContentComponent implements OnInit {
   editPost(post: Post) {
     post.editing = true;
   }
+
   doneEdit(post: Post) {
     post.editing = false;
   }
+
   deletePost(post: Post) {
     let theIndex = masterPostList.indexOf(post);
     masterPostList.splice(theIndex, 1);
+  }
+
+  showHideToggle(post: Post) {
+    if(post.active) {
+      post.active = false;
+    } else {
+      post.active = true;
+    }
   }
 }
