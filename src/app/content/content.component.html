@@ -1,5 +1,5 @@
 <div class="content">
-  <div class="posts" *ngFor="let post of childPosts">
+  <div class="posts" *ngFor="let post of childPosts | postTypePipe: childCategoryType">
     <h1>{{post.title}}</h1>
     <p><small>{{post.timestamp}}</small></p>
     <p><small>{{post.author}}</small></p>

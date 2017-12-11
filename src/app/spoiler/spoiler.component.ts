@@ -8,7 +8,7 @@ import { masterPostList } from './../posts.model';
   styleUrls: ['./spoiler.component.css']
 })
 export class SpoilerComponent implements OnInit {
-  masterCategory:string = "Spoiler";
+  masterCategory:string = "spoiler";
 
 
   addPost(childPost) {

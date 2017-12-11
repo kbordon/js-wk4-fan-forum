@@ -10,6 +10,7 @@ import { masterPostList } from './../posts.model';
 export class ContentComponent implements OnInit {
   public childPosts: Post[] = masterPostList;
   @Output() deleteSender = new EventEmitter();
+  @Input() childCategoryType: string;
 
   ngOnInit() {
   }
