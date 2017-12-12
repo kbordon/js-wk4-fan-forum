@@ -1,0 +1,14 @@
+li {
+  display: inline;
+  list-style-type: none;
+  margin: 10px;
+}
+
+a {
+  color: lightcyan;
+  text-decoration: none;
+  &:hover{
+    text-decoration: underline;
+  }
+  font-size: 30px;
+}

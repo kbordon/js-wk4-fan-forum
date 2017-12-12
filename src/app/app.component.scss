@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Quicksand');
+
+.title {
+  text-align: center;
+  background-color: rgba(225, 130, 35, 0.3);
+  font-family: 'Kaushan Script', cursive;
+  padding: 30px;
+  font-size: 40px;
+  letter-spacing: 3px;
+  text-shadow: 1px 1px 2px rgb(225, 130, 35), -1px -1px 2px rgb(225, 130, 35);
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav {
+  width: 100vw;
+  display: flex;
+  text-align: center;
+  padding: 20px;
+  justify-content: space-around;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: rgba(255,255,255, 0.5);
+  margin: 0;
+}

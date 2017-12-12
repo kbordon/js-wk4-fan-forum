@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: white;
+  background-image: url('https://cdn.pixabay.com/photo/2017/08/08/11/34/moon-2611159_1280.jpg');
+}
